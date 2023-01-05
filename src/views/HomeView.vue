@@ -120,6 +120,12 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-sm-12 text-left">
+          <small class="notValid">{{ systemErrors }}</small>
+        </div>
+      </div>
+
 
     </div>
 
@@ -152,6 +158,7 @@ export default {
          msgLinkedin:"",
          phone: "",
          msgPhone:"",
+         systemErrors:"",
          allCorrect: true
        }
    },
@@ -256,31 +263,30 @@ export default {
         if(!this.allCorrect) {
           console.log("err")
         } else {
-          console.log("ok")
+          this.save()
         }
      },
      save: function() {
-          axios.post('http://localhost:7770/generate', {
-              nombreCompleto: this.name + ' ' + this.last,
-              correo: this.mail,
-              telefono: this.phone,
-              linkedin: this.linkedin,
-              curp: this.curp
-          }).then(response => {
-              if(response.data.error==='no error') {
-                store.commit('setUser', response.data.user);
-                store.commit('setGen', response.data.gen);
-                store.commit('setNombreCompleto', this.name + ' ' + this.last);
-                store.commit('setError', response.data.error);
-                router.push({'name':'thanks'})
-              } else {
-                store.commit('setError', response.data.error);
-                router.push({'name':'error'})
-              }
-          }).catch(error => {
-             store.commit('setError', error);
-             router.push({'name':'thanks'})
-          })
+        this.systemErrors = ''
+        axios.post('http://localhost:7770/generate', {
+            nombreCompleto: this.name + ' ' + this.last,
+            correo: this.mail,
+            telefono: this.phone,
+            linkedin: this.linkedin,
+            curp: this.curp
+        }).then(response => {
+            if(response.data.error==='no error') {
+              store.commit('setUser', response.data.user);
+              store.commit('setGen', response.data.gen);
+              store.commit('setNombreCompleto', this.name + ' ' + this.last);
+              store.commit('setError', response.data.error);
+              router.push({'name':'thanks'})
+            } else {
+              this.systemErrors = response.data.error
+            }
+        }).catch(error => {
+          this.systemErrors = error
+        })
      }
      /*
      //validado = curp.match(curpRegEx);
@@ -305,7 +311,6 @@ export default {
 .ancho {
   max-width: 560px;
 }
-
 .centra {
   margin: auto;
   padding-top: 10%;
