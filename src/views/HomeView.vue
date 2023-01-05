@@ -268,7 +268,7 @@ export default {
      },
      save: function() {
         this.systemErrors = ''
-        axios.post('http://localhost:7770/generate', {
+        axios.post('https://back.ultrasist.net/generate', {
             nombreCompleto: this.name + ' ' + this.last,
             correo: this.mail,
             telefono: this.phone,
