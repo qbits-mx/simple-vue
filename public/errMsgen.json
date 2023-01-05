@@ -1,0 +1,82 @@
+[
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":2,
+            "msg":" ENGLISH La contraseña proporcionada (@1) posee menos simbolos @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":3,
+            "msg":" ENGLISH La contraseña proporcionada (@1) posee menos numeros @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":4,
+            "msg":" ENGLISH La contraseña proporcionada (@1) posee menos mayusculas @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":5,
+            "msg":" ENGLISH La contraseña proporcionada (@1) posee menos minusculas @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":7,
+            "msg":" ENGLISH Fué detectado un caracter inválido en la clave: @1. Sólo se valen números, letras y estos símbolos: _!@#$%&*/-=+"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":8,
+            "msg":" ENGLISH La contraseña proporcionada (@1) posee  @3 repetidos del caracter: @2"
+        },
+        {
+            "exceptionTypeNumber":3456,
+            "errorNumber":0,
+            "msg":" ENGLISH La fecha proporcionada (@1) es incorrecta"
+        },
+        {
+            "exceptionTypeNumber":1001,
+            "errorNumber":0,
+            "msg":" ENGLISH Su clave o su usuario (o ambos) no corresponden a un usuario válido"
+        },
+        {
+            "exceptionTypeNumber":1004,
+            "errorNumber":0,
+            "msg":" ENGLISH El usuario ha sdo bloqueado por exceder el máximo número (7) de intentos fallidos al sistema"
+        },
+        {
+            "exceptionTypeNumber":1015,
+            "errorNumber":0,
+            "msg":" ENGLISH Tiempo de espera para eliminar el bloqueo 1 minutos 55 segundos"
+        },
+        {
+            "exceptionTypeNumber":1017,
+            "errorNumber":2,
+            "msg":" ENGLISH Otro (@1) error: @2"
+        },
+        {
+            "exceptionTypeNumber":1022,
+            "errorNumber":0,
+            "msg":" ENGLISH El nick @1 ya existe en el sistema"
+        },        
+        {
+            "exceptionTypeNumber":4013,
+            "errorNumber":0,
+            "msg":" ENGLISH Ocurrio un error desconocido"
+        },
+        {
+            "exceptionTypeNumber":1011,
+            "errorNumber":0,
+            "msg":" ENGLISH El token referido no existe"
+        },
+        {
+            "exceptionTypeNumber":1022,
+            "errorNumber":0,
+            "msg":" ENGLISH El nick (@1) ya existe en el sistema"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":0,
+            "msg":" ENGLISH La clave proporcionada es inválida"
+        }
+    ]

@@ -1,0 +1,82 @@
+[
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":2,
+            "msg":" FRANCES La contraseña proporcionada (@1) posee menos simbolos @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":3,
+            "msg":" FRANCES La contraseña proporcionada (@1) posee menos numeros @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":4,
+            "msg":" FRANCES La contraseña proporcionada (@1) posee menos mayusculas @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":5,
+            "msg":" FRANCES La contraseña proporcionada (@1) posee menos minusculas @3 de los requeridos: @2"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":7,
+            "msg":" FRANCES Fué detectado un caracter inválido en la clave: @1. Sólo se valen números, letras y estos símbolos: _!@#$%&*/-=+"
+        },                
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":8,
+            "msg":" FRANCES La contraseña proporcionada (@1) posee  @2 repeticiones del caracter: @3"
+        },
+        {
+            "exceptionTypeNumber":3456,
+            "errorNumber":0,
+            "msg":" FRANCES La fecha proporcionada (@1) es incorrecta"
+        },
+        {
+            "exceptionTypeNumber":1001,
+            "errorNumber":0,
+            "msg":" FRANCES Su clave o su usuario (o ambos) no corresponden a un usuario válido"
+        },
+        {
+            "exceptionTypeNumber":1004,
+            "errorNumber":0,
+            "msg":" FRANCES El usuario ha sdo bloqueado por exceder el máximo número (7) de intentos fallidos al sistema"
+        },
+        {
+            "exceptionTypeNumber":1015,
+            "errorNumber":0,
+            "msg":" FRANCES Tiempo de espera para eliminar el bloqueo 1 minutos 55 segundos"
+        },
+        {
+            "exceptionTypeNumber":1017,
+            "errorNumber":2,
+            "msg":" FRANCES Otro (@1) error: @2"
+        },
+        {
+            "exceptionTypeNumber":1022,
+            "errorNumber":0,
+            "msg":" FRANCES El nick @1 ya existe en el sistema"
+        },        
+        {
+            "exceptionTypeNumber":4013,
+            "errorNumber":0,
+            "msg":" FRANCES Ocurrio un error desconocido"
+        },
+        {
+            "exceptionTypeNumber":1011,
+            "errorNumber":0,
+            "msg":" FRANCES El token referido no existe"
+        },
+        {
+            "exceptionTypeNumber":1022,
+            "errorNumber":0,
+            "msg":" FRANCES El nick (@1) ya existe en el sistema"
+        },
+        {
+            "exceptionTypeNumber":1016,
+            "errorNumber":0,
+            "msg":" FRANCES La clave proporcionada es inválida"
+        }
+    ]
