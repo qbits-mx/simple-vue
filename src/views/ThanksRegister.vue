@@ -7,7 +7,7 @@
     <h3>Clave: {{ clave }}</h3>
     <a href='https://artemisa.ultrasist.net/login/index.php' target='_blank'>https://artemisa.ultrasist.net</a>
     <hr/>
-    <a href='https://register.ultrasist.net'>back</a>
+    <a href='https://registro.ultrasist.net'>back</a>
   </div>
 </template>
 
