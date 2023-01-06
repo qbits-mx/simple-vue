@@ -149,21 +149,20 @@ export default {
    }, 
    data: function () {
        return {
-         name: "",
+         name: "x",
          msgName:"",
-         last: "",
+         last: "y",
          msgLast:"",
-         mail: "",
+         mail: "gus@aol.com",
          msgMail:"",
-         curp : "",
+         curp : "aesg6710hasrns12",
          msgCurp:"",
-         linkedin: "",
+         linkedin: "http://gus.com",
          msgLinkedin:"",
-         phone: "",
+         phone: "+525516913070",
          msgPhone:"",
          systemErrors:"",
-         allCorrect: true,
-         pba: process.env.VUE_APP_TITLE
+         allCorrect: true
        }
    },
    methods: {
@@ -272,7 +271,9 @@ export default {
      },
      save: function() {
         this.systemErrors = ''
-        axios.post(this.backendUrl + '/generate', {
+        var api = this.backendUrl + '/generate'
+        console.log(api)
+        axios.post(api, {
             nombreCompleto: this.name + ' ' + this.last,
             correo: this.mail,
             telefono: this.phone,
