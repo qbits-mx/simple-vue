@@ -141,9 +141,12 @@ const emailRegex = new RegExp(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)
 const curpRegex  = new RegExp(/^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/);
 const phoneRegex = new RegExp(/^(\+{0,})(\d{0,})([(]{1}\d{1,3}[)]{0,}){0,}(\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}(\s){0,}$/);
 const urlRegex = new RegExp("^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?")
+const backendUrl = process.env.VUE_APP_BACKEND_URL
 
 export default {
-
+   setup() {
+      console.log(backendUrl)
+   }, 
    data: function () {
        return {
          name: "",
@@ -159,7 +162,8 @@ export default {
          phone: "",
          msgPhone:"",
          systemErrors:"",
-         allCorrect: true
+         allCorrect: true,
+         pba: process.env.VUE_APP_TITLE
        }
    },
    methods: {
@@ -268,7 +272,7 @@ export default {
      },
      save: function() {
         this.systemErrors = ''
-        axios.post('https://backend.ultrasist.net/generate', {
+        axios.post(this.backendUrl + '/generate', {
             nombreCompleto: this.name + ' ' + this.last,
             correo: this.mail,
             telefono: this.phone,

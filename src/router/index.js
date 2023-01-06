@@ -4,7 +4,6 @@ import axios from 'axios';
 import Home from '@/views/HomeView'
 import PageNotFound from '@/views/PageNotFound'
 import ThanksRegister from '@/views/ThanksRegister'
-import ErrorPage from '@/views/ErrorPage'
 
 const routes = [
   {
@@ -16,11 +15,6 @@ const routes = [
     path: '/thanks', 
     name: 'thanks', 
     component: ThanksRegister 
-  },
-  { 
-    path: '/error', 
-    name: 'error', 
-    component: ErrorPage 
   },
   { 
     path: '/:pathMatch(.*)*', 
