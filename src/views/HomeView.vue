@@ -147,25 +147,36 @@ export default {
    setup() {
       console.log(backendUrl)
    }, 
+   mounted() {
+    //this.setVars()
+   },
    data: function () {
        return {
-         name: "x",
+         name: "",
          msgName:"",
-         last: "y",
+         last: "",
          msgLast:"",
-         mail: "gus@aol.com",
+         mail: "",
          msgMail:"",
-         curp : "aesg6710hasrns12",
+         curp : "",
          msgCurp:"",
-         linkedin: "http://gus.com",
+         linkedin: "",
          msgLinkedin:"",
-         phone: "+525516913070",
+         phone: "",
          msgPhone:"",
          systemErrors:"",
          allCorrect: true
        }
    },
    methods: {
+     setVars: function(){
+      this.name="Miguel"
+      this.last="Hidalgo y Costilla"
+      this.mail="mike@aol.com"
+      this.curp="AESG671022HASRNS12"
+      this.linkedin="https://www.linkedin.com/in/gustavo-adolfo-arellano-sandoval-085021b0/"
+      this.phone="+525516913070"
+     },
      validateUrl: function() {
         this.msgLinkedin = ""
         if(this.linkedin.length>70) {
