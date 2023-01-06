@@ -271,8 +271,8 @@ export default {
      },
      save: function() {
         this.systemErrors = ''
-        var api = this.backendUrl + '/generate'
-        console.log(api)
+        var api = backendUrl + '/generate'
+        
         axios.post(api, {
             nombreCompleto: this.name + ' ' + this.last,
             correo: this.mail,
