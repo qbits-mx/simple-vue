@@ -129,6 +129,9 @@
 
     </div>
 
+    <div class="footer ancho">
+      <small>version {{ version }}</small>
+    </div>
   </div>
 </template>
 
@@ -165,7 +168,8 @@ export default {
          phone: "",
          msgPhone:"",
          systemErrors:"",
-         allCorrect: true
+         allCorrect: true,
+         version: process.env.VUE_APP_VERSION
        }
    },
    methods: {
@@ -333,5 +337,13 @@ export default {
 }
 .notValid {
   color:#ff0000;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  text-align: right;
 }
 </style>
