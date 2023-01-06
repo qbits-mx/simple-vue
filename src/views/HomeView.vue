@@ -126,12 +126,17 @@
         </div>
       </div>
 
-
+      <div class="row">
+        <div class="col-sm-12 text-left">
+          <h1>&nbsp;</h1>
+        </div>
+      </div>
     </div>
 
-    <div class="footer ancho">
+    <div class="footer">
       <small>version {{ version }}</small>
     </div>
+
   </div>
 </template>
 
@@ -339,11 +344,10 @@ export default {
   color:#ff0000;
 }
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 50px;
   background-color: transparent;
   text-align: right;
+  width: 560px;
 }
 </style>
